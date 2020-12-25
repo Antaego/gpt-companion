@@ -3,9 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+gpt-example/deps/gpt/models/*
+helpers/model-helper/models/*
 # C extensions
 *.so
-
+oldmodels/
 # Distribution / packaging
 .Python
 build/
@@ -110,6 +112,7 @@ ENV/
 env.bak/
 venv.bak/
 
+.idea
 # Spyder project settings
 .spyderproject
 .spyproject
