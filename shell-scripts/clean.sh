@@ -4,7 +4,7 @@ docker ps -a -f status=exited
 docker stop gpt-example
 #docker rmi $(docker ps -a -q -f status=exited)
 #docker rmi -f $(docker images -q -f dangling=true --filter "image_label=gpt-example")
-docker system prune
+docker system prune -y
 
 
 

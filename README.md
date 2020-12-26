@@ -77,7 +77,7 @@ What is needed to build this project:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-The following are instructions for ubuntu 18
+The following are instructions for ubuntu 18 but will probably work on other distributions
 
 ### Install docker if you haven't
 
@@ -100,6 +100,7 @@ Open up your cloned folder and follow these steps from your terminal:
     chmod +x install.sh
    ./install.sh
    ```
+3. if you have any problems running .sh files, make sure to chmod +x them before running.
 
 
 
@@ -107,7 +108,7 @@ Open up your cloned folder and follow these steps from your terminal:
 ## Usage
 1. Start the docker container.  
    ```sh 
-   chmod +x start.sh
+   chmod +x run.sh 
    ./run.sh
    ```
    This should start a separate linux environment in your terminal.
@@ -115,23 +116,23 @@ Open up your cloned folder and follow these steps from your terminal:
 
 2. From there run the following:
    ```sh 
-   ./run.sh
+   ./run.sh <MODEL NAME>
+   example:
+   ./run.sh 117M
    ```
    Wait for everything to load. You should be prompted to enter some text. This text is the seed that will generate your
    output.
    
-Model sizes available:
+###Model sizes available:
 1. 117M <--- default
 2. 345M
 3. 774M
 4. 1558M
 
-
-sudo apt install python3-pip
-requests==2.21.0
-tqdm==4.31.1
-
-
+To get more, run this in your cloned folder: 
+   ```sh 
+   ./get_model.sh <MODEL NAME>
+   ```
 <!-- ROADMAP -->
 ## Roadmap
 -- tbd
